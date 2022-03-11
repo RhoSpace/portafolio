@@ -98,7 +98,7 @@ nav {
     padding: 1.3rem 0 1.3rem 0;
     @include container();
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     .menu-item {
         @include reset-pm();
         list-style: none;

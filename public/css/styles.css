@@ -97,7 +97,7 @@ nav {
   padding: 1.3rem 0 1.3rem 0;
   max-width: 64rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 nav .menu-item {
   padding: 0;
