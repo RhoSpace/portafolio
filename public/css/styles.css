@@ -12,24 +12,24 @@
 }
 
 body {
-  background-color: #181818;
+  background-color: #1b1b1b;
   border-bottom: 1px solid black;
 }
 
 h1 {
-  color: #f5a13d;
+  color: white;
   font-size: 1.25em;
   font-weight: lighter;
 }
 
 strong {
-  color: #ffbb68;
+  color: #00f8df;
   font-weight: normal;
 }
 
 h2 {
   font-size: 2rem;
-  color: #f5a13d;
+  color: #00f8df;
   font-family: "Space Mono", monospace;
   text-shadow: 0.15rem 0.15rem black;
 }
@@ -77,7 +77,7 @@ header .presentation h1 {
   line-height: 1.7em;
 }
 header .presentation strong {
-  color: white;
+  color: #00f8df;
 }
 header .presentation .avatar {
   border-radius: 100%;
@@ -93,7 +93,7 @@ header .presentation .avatar img {
 }
 
 nav {
-  background-color: #f5a13d;
+  background-color: #00f8df;
   padding: 1.3rem 0 1.3rem 0;
   max-width: 64rem;
   display: flex;
@@ -110,8 +110,8 @@ nav .menu-item {
 nav .menu-item li a {
   border-radius: 5px;
   border: 3px;
-  background-color: #f5a13d;
-  color: white;
+  background-color: #00f8df;
+  color: black;
   padding: 1rem 2rem 1rem 2rem;
   max-width: 8rem;
   text-align: center;
@@ -121,12 +121,12 @@ nav .menu-item li a:hover {
   border-radius: 5px;
   border: 3px;
   background-color: white;
-  color: #0f0707;
+  color: black;
   padding: 1rem 2rem 1rem 2rem;
   max-width: 8rem;
   text-align: center;
   font-weight: bolder;
-  box-shadow: 6px 6px #07224a;
+  box-shadow: 4px 4px black;
 }
 nav .toggle {
   display: none;
@@ -160,20 +160,12 @@ footer hr {
   margin: 0 auto;
 }
 
-.main {
-  max-width: 64rem;
-  color: #cccccc;
-  overflow: auto;
-  height: 45rem;
-  background: #002b3b;
-}
-
 section {
   max-width: 64rem;
 }
 
 .one {
-  background-color: #0f0707;
+  background-color: black;
 }
 .one h3 {
   padding: 2rem 0 1rem 0;
@@ -189,7 +181,7 @@ section {
 }
 
 .two {
-  background-color: #0f0707;
+  background-color: black;
 }
 .two .containerProyect {
   margin: 0 2rem 0 2rem;
@@ -210,8 +202,8 @@ section {
   max-width: 60%;
   border-radius: 5px;
   border: 3px;
-  background-color: #004e4e;
-  box-shadow: 6px 6px #07224a;
+  background-color: #004e41;
+  box-shadow: 6px 6px #003729;
 }
 .two .containerProyect .proyect1 .logoproyect {
   display: grid;
@@ -359,7 +351,7 @@ section {
 @media screen and (max-width: 960px) {
   .menu .menu-item-active {
     display: flex;
-    background-color: #f5a13d;
+    background-color: #7d0645;
     flex-direction: column;
     position: fixed;
     left: 0;
@@ -375,7 +367,7 @@ section {
   .menu .menu-item-active li a {
     border-radius: 5px;
     border: 3px;
-    background-color: #f5a13d;
+    background-color: #7d0645;
     color: white;
     padding: 1rem 2rem 1rem 2rem;
     max-width: 8rem;
@@ -386,7 +378,7 @@ section {
     border-radius: 5px;
     border: 3px;
     background-color: white;
-    color: #0f0707;
+    color: black;
     padding: 1rem 2rem 1rem 2rem;
     max-width: 8rem;
     text-align: center;

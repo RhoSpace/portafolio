@@ -14,12 +14,12 @@
 }
 
 body {
-    background-color: rgb(24, 24, 24);
+    background-color: $bg2-color;
     border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 h1 {
-    color: $primary-color;
+    color: white;
     font-size: 1.25em;
     font-weight: lighter;
 }
@@ -31,7 +31,7 @@ strong {
 
 h2 {
     font-size: 2rem;
-    color: $primary-color;
+    color: $secondary-color;
     font-family: "Space Mono", monospace;
     text-shadow: 0.15rem 0.15rem black;
 }
@@ -76,7 +76,7 @@ header {
             line-height: 1.7em;
         }
         strong {
-            color: white;
+            color: $secondary-color;
         }
         .avatar {
             border-radius: 100%;
@@ -94,7 +94,7 @@ header {
 }
 
 nav {
-    background-color: $primary-color;
+    background-color: $secondary-color;
     padding: 1.3rem 0 1.3rem 0;
     @include container();
     display: flex;
@@ -108,11 +108,11 @@ nav {
         li {
             a {
                 @include border();
-                @include btn($background-color: $primary-color, $color: white);
+                @include btn($background-color: $secondary-color, $color: $bg-color);
                 &:hover {
                     @include border();
                     @include btn($background-color: white, $color: $bg-color);
-                    box-shadow: $box-shadow;
+                    box-shadow: 4px 4px $bg-color;
                 }
             }
         }
@@ -155,20 +155,6 @@ footer {
     }
 }
 
-.main {
-    @include container();
-    color: $font-color;
-    overflow: auto;
-    height: 45rem; //39.5rem 1024
-    //background: rgb(83, 1, 1);
-    //background: linear-gradient(180deg, rgba(83, 1, 1, 1) 22%, rgba(36, 9, 0, 1) 88%);
-    //background: rgb(83, 1, 1);
-    //background: linear-gradient(180deg, rgba(83, 1, 1, 1) 22%, rgba(157, 0, 122, 1) 88%);
-    //background: rgb(83, 13, 13);
-    //background: linear-gradient(180deg, rgba(83, 13, 13, 1) 15%, rgba(157, 0, 48, 1) 84%);
-    background: #002b3b;
-}
-
 section {
     @include container();
 }
@@ -207,8 +193,8 @@ section {
         .proyect1 {
             @include proyects();
             @include border();
-            background-color: rgb(0, 78, 78);
-            box-shadow: $box-shadow;
+            background-color: rgb(0, 78, 65);
+            box-shadow: 6px 6px #003729;
             .logoproyect {
                 display: grid;
                 justify-items: center;
