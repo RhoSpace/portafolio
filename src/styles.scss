@@ -282,7 +282,7 @@ section {
     .menu {
         .menu-item-active {
             display:flex;
-            background-color: $primary-color;
+            background-color: $secondary-color;
             flex-direction: column;
             position: fixed;
             left: 0;
@@ -295,7 +295,7 @@ section {
                 list-style: none;
                 a {
                     @include border();
-                    @include btn($background-color: $primary-color, $color: white);
+                    @include btn($background-color: $secondary-color, $color: $bg-color);
                     &:hover {
                         @include border();
                         @include btn($background-color: white, $color: $bg-color);
