@@ -1,0 +1,373 @@
+@import "components/mixins", "components/vars";
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+@font-face {
+    font-family: "Alegreya";
+    src: url("../font/AlegreyaSans-Regular.ttf") format("truetype");
+}
+
+* {
+    @include reset-pm();
+    font-family: Alegreya;
+    line-height: 1.8rem;
+    color: $font-color;
+}
+
+body {
+    background-color: rgb(24, 24, 24);
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+h1 {
+    color: $primary-color;
+    font-size: 1.25em;
+    font-weight: lighter;
+}
+
+strong {
+    color: $secondary-color;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 2rem;
+    color: $primary-color;
+    font-family: "Space Mono", monospace;
+    text-shadow: 0.15rem 0.15rem black;
+}
+
+h3 {
+    color: white;
+}
+
+h4 {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    text-decoration: none;
+}
+
+header {
+    @include container();
+    background-image: url("../img/bg.jpg");
+    background-position: 50% 38%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    &:hover {
+        background-image: url("../img/bg2.jpg");
+        transition: background-image 3s;
+        h1 {
+            opacity: 0;
+            transition: opacity 3s;
+        }
+        .avatar {
+            opacity: 0;
+            transition: opacity 3s;
+        }
+    }
+    .presentation {
+        padding: 3.5em 0 3em 0;
+        text-align: center;
+        h1 {
+            line-height: 1.7em;
+        }
+        strong {
+            color: white;
+        }
+        .avatar {
+            border-radius: 100%;
+            width: 100%;
+            width: 6.25em;
+            display: inline-block;
+            position: relative;
+            img {
+                display: block;
+                border-radius: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+nav {
+    background-color: $primary-color;
+    padding: 1.3rem 0 1.3rem 0;
+    @include container();
+    display: flex;
+    justify-content: flex-end;
+    .menu-item {
+        @include reset-pm();
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: 0 0.5rem 0 0.5rem;
+        li {
+            a {
+                @include border();
+                @include btn($background-color: $primary-color, $color: white);
+                &:hover {
+                    @include border();
+                    @include btn($background-color: white, $color: $bg-color);
+                    box-shadow: $box-shadow;
+                }
+            }
+        }
+    }
+    .toggle {
+        display: none;
+    }
+}
+
+footer {
+    background-color: #303030;
+    //background-image: url("../img/bg.jpg");
+    padding-bottom: 2rem;
+    section {
+        padding: 3rem 0 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        .icons {
+            //@include m-cont();
+            a {
+                padding-right: 0.8rem;
+                font-size: 1.5rem;
+                opacity: 0.6;
+                &:hover {
+                    opacity: 1;
+                }
+                i {
+                    font-size: 1.5srem;
+                }
+            }
+        }
+        .textfooter {
+            // @include m-cont();
+            text-align: end;
+        }
+    }
+    hr {
+        @include container();
+        margin: 0 auto;
+    }
+}
+
+.main {
+    @include container();
+    color: $font-color;
+    overflow: auto;
+    height: 45rem; //39.5rem 1024
+    //background: rgb(83, 1, 1);
+    //background: linear-gradient(180deg, rgba(83, 1, 1, 1) 22%, rgba(36, 9, 0, 1) 88%);
+    //background: rgb(83, 1, 1);
+    //background: linear-gradient(180deg, rgba(83, 1, 1, 1) 22%, rgba(157, 0, 122, 1) 88%);
+    //background: rgb(83, 13, 13);
+    //background: linear-gradient(180deg, rgba(83, 13, 13, 1) 15%, rgba(157, 0, 48, 1) 84%);
+    background: #002b3b;
+}
+
+section {
+    @include container();
+}
+
+.one {
+    background-color: $bg-color;
+    h3 {
+        padding: 2rem 0 1rem 0;
+        @include m-cont();
+    }
+    p {
+        @include m-cont();
+    }
+    .skills {
+        @include m-cont();
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.two {
+    background-color: $bg-color;
+    .containerProyect {
+        @include m-cont();
+        .proyect {
+            img {
+                width: 30vh;
+                max-width: 15rem;
+            }
+            .infoproyect {
+                p {
+                    margin-top: 1rem;
+                }
+            }
+        }
+        .proyect1 {
+            @include proyects();
+            @include border();
+            background-color: rgb(0, 78, 78);
+            box-shadow: $box-shadow;
+            .logoproyect {
+                display: grid;
+                justify-items: center;
+                gap: 1rem;
+                .btn {
+                    @include btn(white, #00355e);
+                    @include border();
+                    transform: scale(0.8);
+                    max-height: 2rem;
+                }
+                &:hover {
+                    .btn {
+                        &:hover {
+                            transform: scale(1);
+                            transition: transform 0.4s;
+                        }
+                    }
+                }
+            }
+        }
+        .proyect2 {
+            @include proyects();
+            @include border();
+            background-color: #00355e;
+            box-shadow: $box-shadow;
+            position: relative;
+            left: 30%;
+            .logoproyect {
+                display: grid;
+                justify-items: center;
+                .btn {
+                    @include btn(white, #00355e);
+                    @include border();
+                    transform: scale(0.8);
+                    max-height: 2rem;
+                }
+                &:hover {
+                    .btn {
+                        &:hover {
+                            transform: scale(1);
+                            transition: transform 0.4s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+//ciclos
+@for $i from 1 to $limit {
+    .p-#{$i} {
+        padding: $i * $unit;
+    }
+}
+
+@for $i from 1 to $limit {
+    .py-#{$i} {
+        padding: $i * $unit 0;
+    }
+}
+
+//media
+@media screen and(max-width: map-get($breakpoints, "muygrande")) {
+    footer {
+        section {
+            .icons {
+                @include m-cont();
+            }
+            .textfooter {
+                @include m-cont();
+            }
+        }
+        hr {
+            @include m-cont();
+        }
+    }
+}
+
+@media screen and(max-width: map-get($breakpoints, "grande")) {
+    .menu {
+        .menu-item-active {
+            display:flex;
+            background-color: $primary-color;
+            flex-direction: column;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            padding: 7rem 3rem 7rem 0;
+            align-items: center;
+            gap: 3rem;
+            li {
+                list-style: none;
+                a {
+                    @include border();
+                    @include btn($background-color: $primary-color, $color: white);
+                    &:hover {
+                        @include border();
+                        @include btn($background-color: white, $color: $bg-color);
+                        box-shadow: $box-shadow;
+                    }
+                }
+            }
+        }
+        .menu-item {
+            display: none;
+        }
+        .toggle {
+            display: block;
+            background: none;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            left: 30px;
+            i {
+                font-size: 2rem;
+                color: white;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 690px) {
+    header{
+        background-size: 150%;
+    }
+}
+
+
+@media screen and(max-width: 866px) {
+    .two {
+        .containerProyect {
+            .proyect {
+                max-width: 64rem;
+                align-items: center;
+                justify-items: center;
+                position: static;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 575px) {
+    .one {
+        .skills {
+            overflow-x: scroll;
+        }
+    }
+    .two {
+        .containerProyect {
+            .proyect {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

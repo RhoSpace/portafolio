@@ -1,0 +1,19 @@
+$primary-color: #f5a13d;
+$secondary-color: #ffbb68;
+$font-color: rgb(204, 204, 204);
+$bg-color: rgb(15, 7, 7);
+$bg2-color:#1b1b1b;
+
+$box-shadow:6px 6px #07224a;
+
+$limit: 10;
+$unit: 0.5rem;
+
+$breakpoints:(
+    muypequeña: 320px,
+    pequeño: 480px,
+    normal: 768px,
+    grande: 960px,
+    muygrande: 1024px,
+    gigante: 1328px
+)
