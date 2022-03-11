@@ -98,7 +98,7 @@ nav {
     padding: 1.3rem 0 1.3rem 0;
     @include container();
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     .menu-item {
         @include reset-pm();
         list-style: none;
@@ -219,7 +219,7 @@ section {
             @include proyects();
             @include border();
             background-color: #00355e;
-            box-shadow: $box-shadow;
+            box-shadow: 6px 6px #07224a;
             position: relative;
             left: 30%;
             .logoproyect {
@@ -288,7 +288,7 @@ section {
             left: 0;
             top: 0;
             width: 100%;
-            padding: 7rem 3rem 7rem 0;
+            padding: 7rem 3rem 4rem 0;
             align-items: center;
             gap: 3rem;
             li {
@@ -312,8 +312,7 @@ section {
             background: none;
             border: none;
             cursor: pointer;
-            position: relative;
-            left: 30px;
+            padding-right: 2rem;
             i {
                 font-size: 2rem;
                 color: white;
