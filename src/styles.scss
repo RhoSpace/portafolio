@@ -349,7 +349,7 @@ section {
 @media screen and(max-width: 575px) {
     .one {
         .skills {
-            overflow-x: scroll;
+            gap: 0.5rem;
         }
     }
     .two {
@@ -358,6 +358,15 @@ section {
                 display: flex;
                 flex-direction: column;
             }
+        }
+    }
+}
+
+@media screen and(max-width: 465px){
+    .one {
+        .skills {
+            overflow-x: scroll;
+            gap: 0.5rem;
         }
     }
 }
