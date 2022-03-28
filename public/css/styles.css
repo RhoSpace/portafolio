@@ -219,7 +219,7 @@ section {
 }
 .two .containerProyect .proyect1 .logoproyect .btn {
   background-color: white;
-  color: #00355e;
+  color: #003729;
   padding: 1rem 2rem 1rem 2rem;
   max-width: 8rem;
   text-align: center;
@@ -264,6 +264,39 @@ section {
   max-height: 2rem;
 }
 .two .containerProyect .proyect2 .logoproyect:hover .btn:hover {
+  transform: scale(1);
+  transition: transform 0.4s;
+}
+.two .containerProyect .proyect3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1.9rem 2rem 1.5rem 2rem;
+  margin: 2rem 0 1rem 0rem;
+  max-width: 60%;
+  border-radius: 5px;
+  border: 3px;
+  background-color: #35004e;
+  box-shadow: 6px 6px #1f0429;
+}
+.two .containerProyect .proyect3 .logoproyect {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+}
+.two .containerProyect .proyect3 .logoproyect .btn {
+  background-color: white;
+  color: #35004e;
+  padding: 1rem 2rem 1rem 2rem;
+  max-width: 8rem;
+  text-align: center;
+  font-weight: bolder;
+  border-radius: 5px;
+  border: 3px;
+  transform: scale(0.8);
+  max-height: 2rem;
+}
+.two .containerProyect .proyect3 .logoproyect:hover .btn:hover {
   transform: scale(1);
   transition: transform 0.4s;
 }

@@ -205,7 +205,7 @@ section {
                 justify-items: center;
                 gap: 1rem;
                 .btn {
-                    @include btn(white, #00355e);
+                    @include btn(white, #003729);
                     @include border();
                     transform: scale(0.8);
                     max-height: 2rem;
@@ -232,6 +232,31 @@ section {
                 justify-items: center;
                 .btn {
                     @include btn(white, #00355e);
+                    @include border();
+                    transform: scale(0.8);
+                    max-height: 2rem;
+                }
+                &:hover {
+                    .btn {
+                        &:hover {
+                            transform: scale(1);
+                            transition: transform 0.4s;
+                        }
+                    }
+                }
+            }
+        }
+        .proyect3 {
+            @include proyects();
+            @include border();
+            background-color: rgb(53, 0, 78);
+            box-shadow: 6px 6px rgb(31, 4, 41);
+            .logoproyect {
+                display: grid;
+                justify-items: center;
+                gap: 1rem;
+                .btn {
+                    @include btn(white, rgb(53, 0, 78));
                     @include border();
                     transform: scale(0.8);
                     max-height: 2rem;
